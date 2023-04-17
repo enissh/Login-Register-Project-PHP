@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+/* Stilizimi i Sidebar */
+.sidebar {
+    width: 25%;
+    background-color: crimson;
+    padding: 0 20px;
+    position: fixed;
+}
+
+.sidebar-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+.sidebar-items{
+    color: white;
+    font-size: 25px;
+}
+.sidebar-items img {
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar-items p {
+    margin: 15px 0 90px 0;
+}
+
+.sidebar-items button {
+    width: 250px;
+    padding: 15px 25px;
+    border-radius: 35px;
+    border: none;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-items button:hover {
+    background-color: #32de84;
+}
+
+.sidebar-items a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+
+.active {
+    background-color: #32de84;
+}
+
+.btnexit {
+    margin-top: 102px;
+}
+
+/* Stilizimi i pjeses kryesore main */
+main {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: 380px;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 2px -2px gray;
+    align-items: center;
+}
+
+header h1 {
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.header {
+    display: flex;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+}
+
+.header-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.blog {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 25px 25px;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    background-color: #F8F8F8;
+}
+
+.blog hr {
+    border-width: 5px;
+    border: 3px solid crimson;
+    margin-right: 15px;
+}
+
+.blog-overlay {
+    opacity: 0.9;
+    margin-top: 25px;
+}
+
+.blog-text {
+    padding: 20px 10px;
+    font-size: 17px;
+}
+
+.blog-text h1 {
+    padding-bottom: 15px;
+}
+
+.blog-text ul {
+    padding-left: 15px;
+}
+
+.blog-text ul li {
+    padding-bottom: 7px;
+}
+
+.main-text {
+    padding: 25px;
+}
+
+.main-text hr {
+    margin-top: 5px;
+    border: 2px solid #32de84;
+}
+
+.main-text-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-text-images img {
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+
+}
+
+
+
+
+
+
+
+/* Stilizimi i Carousel i marrur nga flickcity*/
+.carousel {
+    background: white;
+}
+
+.carousel-cell {
+    width: 66%;
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.course1 {
+    background-image: url(img/course1.png);
+}
+
+.course2 {
+    background-image: url(img/course2.png);
+}
+
+.course3 {
+    background-image: url(img/course3.png);
+}
+
+.course4 {
+    background-image: url(img/course4.png);
+}
+
+.course5 {
+    background-image: url(img/course5.png);
+}
+
+.
+
+/* Stilizimi i  pjeses behuni instruktor*/
+.card {
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 70%;
+}
+
+.card-flex {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.card-text {
+    width: 50%;
+}
+
+.card-text h1 {
+    margin: 15px 0;
+}
+
+.card-text p {
+    margin-bottom: 15px;
+}
+
+.card-text button {
+    padding: 15px 15px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: #1CAC78;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: 0.5s ease;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.card-text button:hover {
+    background-color: #32de84;
+    color: white;
+}
+
+.card-text button:active {
+    background-color: #32de84;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/* Stilizimi i kurseve me te shitura */
+.course {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 670px;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 45px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.course img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+}
+
+.course h1 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.course-text-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+
+}
+
+.course-text-rating {
+    display: flex;
+}
+
+.course-text-rating img {
+    width: 80px;
+    height: 15px;
+    margin-top: 4px;
+}
+
+.course-text-rating span {
+    color: #ffdf00;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.course button {
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: #1CAC78;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: 0.5s ease;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.course button:hover {
+    background-color: #32de84;
+    color: white;
+}
+
+.course button:active {
+    background-color: #32de84;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.job-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.job-containerr{
+
+}
+
+/* Stilizimi i footer*/
+footer {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 25px 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    padding-top: 5px;
+}
+
+footer a:hover {
+    color: #32de84;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+footer ul li {
+    padding-top: 5px;
+
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    font-weight: 550;
+}
+
+.footer-links2 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 550;
+}
+
+.footer-links3 {
+    font-weight: 550;
+}
+
+.footer-socialmedia {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-socialmedia img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-socialmedia-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #F8F8F8;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo h2 {
+    padding-top: 17px;
+    padding-left: 10px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+/* Stilizimi i kurseve online */
+.coursee {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 45px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.coursee img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+}
+
+.coursee h1 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.course-text-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+
+}
+
+.course-text-rating {
+    display: flex;
+}
+
+.course-text-rating img {
+    width: 80px;
+    height: 15px;
+    margin-top: 4px;
+}
+
+.course-text-rating span {
+    color: #ffdf00;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.coursee button {
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: #1CAC78;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: 0.5s ease;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.coursee button:hover {
+    background-color: #32de84;
+    color: white;
+}
+
+.coursee button:active {
+    background-color: #32de84;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.job-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.job-containerr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* Stilizimi i Kontaktit */
+.main img{
+    width: 100%;
+    height: 330px;
+}
+.main-text{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.main-textt{
+    width: 100%;
+    text-align: left;
+    padding: 25px;
+}
+.main-textt hr{
+    margin-top: 5px;
+    border:2px solid #32de84;
+    margin: 20px 0;
+}
+.main-textt h2{
+    font-size: 25px;
+}
+.main-text h1{
+    margin: 15px 0;
+}
+.main-text p{
+    margin: 15px 0;
+}
+.main-info{
+    background-color: #E8E8E8;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    margin: 25px 0;
+}
+.info{
+    width: 25%;
+    background-color: white;
+    padding: 15px;
+  	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+.kontakt{
+    display: flex;
+    padding: 25px;
+    height: 200px;
+    
+}
+.kontakt2{
+    display: flex;
+    padding: 25px;
+}
+.kontakt-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.kontakt hr{
+    border-width: 5px;
+    border: 3px solid crimson;
+    margin-right: 15px;
+}
+.kontakt2 hr{
+        border-width: 5px;
+    border: 3px solid crimson;
+    margin-right: 15px;
+}
+.kontakti-info{
+    display: flex;
+}
+.kontakti-info2{
+    margin-bottom: 20px;
+}
+.kontakti-info2 h1{
+    padding-bottom: 10px;
+}
+.kontakti-info2 h2{
+    color: #696969;
+}
+.kontakti-info h1{
+    font-size: 35px;
+}
+.kontakti-info h2{
+    font-size: 25px;
+    color: #696969;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+.ct{
+    margin: 0 auto;
+    align-items: center;
+}
+table{
+    padding: 5px;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.deletebtn{
+    background-color: crimson;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+}
+.editbtn{
+        background-color: #FFD700;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+}
+
+#alert-message {
+  display: none;
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.faq-flex{
+    display: flex;
+    flex-direction: column;
+}
